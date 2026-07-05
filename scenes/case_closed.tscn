@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://358b2q5rf8qs"]
+
+[ext_resource type="Texture2D" uid="uid://c1teqt17hfo41" path="res://assets/case 001/case_end.png" id="1_cuf44"]
+[ext_resource type="Script" uid="uid://cpmqygc2rjca7" path="res://script/case_closed.gd" id="1_qnyga"]
+[ext_resource type="FontFile" uid="uid://ch1cxh3gcfyy5" path="res://fonts/Niloofar/XB NiloofarBd.ttf" id="3_odpes"]
+[ext_resource type="FontFile" uid="uid://ok6grfaa22m7" path="res://fonts/Simonetta/Simonetta-Black.ttf" id="4_gdsyg"]
+[ext_resource type="FontFile" uid="uid://b51slbom6i45b" path="res://fonts/Old_Standard_TT/OldStandardTT-Bold.ttf" id="5_tcysj"]
+[ext_resource type="Texture2D" uid="uid://kf7tlda1h3eq" path="res://assets/Button texture.png" id="6_1ogod"]
+[ext_resource type="Script" uid="uid://cdmsn657146bq" path="res://script/back_to_menu.gd" id="7_s64it"]
+
+[node name="case_closed" type="Control" unique_id=2145008274]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qnyga")
+
+[node name="bg" type="TextureRect" parent="." unique_id=1391367366]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_cuf44")
+metadata/_edit_use_anchors_ = true
+
+[node name="Summary" type="Label" parent="." unique_id=1603237651]
+layout_mode = 0
+offset_left = 482.0
+offset_top = 453.0
+offset_right = 1092.0
+offset_bottom = 756.0
+theme_override_fonts/font = ExtResource("3_odpes")
+theme_override_font_sizes/font_size = 18
+text = "Well done, Archivist. Your conclusion matches what historians have found. Papa Isio — Dionisio Magbuelas — was born in 1846 in Negros. He led the Babaylanes movement, blending old Filipino spiritual beliefs with the fight against colonial rule. To the landowners and authorities, he was a bandit and a criminal. To the farmers and the poor, he was a rebel and a protector. To history, he was all of these things at once. He was the last Filipino revolutionary leader to surrender — on August 6, 1907. He died in Bilibid Prison in Manila in 1911, largely forgotten. Until now."
+autowrap_mode = 3
+
+[node name="AnswerTitle" type="Label" parent="." unique_id=1011956705]
+layout_mode = 0
+offset_left = 535.0
+offset_top = 411.0
+offset_right = 812.0
+offset_bottom = 440.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_gdsyg")
+theme_override_font_sizes/font_size = 22
+text = "THE TRUTH PRESERVED"
+horizontal_alignment = 1
+
+[node name="CompletionRating" type="Label" parent="." unique_id=2084987843]
+layout_mode = 0
+offset_left = 913.0
+offset_top = 810.0
+offset_right = 1007.0
+offset_bottom = 847.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_tcysj")
+theme_override_font_sizes/font_size = 36
+text = "100%"
+horizontal_alignment = 1
+
+[node name="BackToMenu" type="Button" parent="." unique_id=1178712687]
+layout_mode = 0
+offset_left = 730.00006
+offset_top = 961.00006
+offset_right = 1239.0
+offset_bottom = 1077.0
+scale = Vector2(0.83199686, 0.83199686)
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.22745098, 1)
+theme_override_colors/font_hover_color = Color(0.63236827, 0.6324995, 0.11853903, 1)
+theme_override_fonts/font = ExtResource("4_gdsyg")
+theme_override_font_sizes/font_size = 48
+text = "Return to Menu"
+icon = ExtResource("6_1ogod")
+flat = true
+icon_alignment = 1
+script = ExtResource("7_s64it")

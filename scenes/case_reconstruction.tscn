@@ -1,0 +1,254 @@
+[gd_scene format=3 uid="uid://d021purj6g8k0"]
+
+[ext_resource type="Script" uid="uid://c6t32daqpi6pl" path="res://script/case_reconstruction.gd" id="1_mco0w"]
+[ext_resource type="Texture2D" uid="uid://bwj8cklbtexro" path="res://assets/Case reconstruction bg.png" id="1_xj8tr"]
+[ext_resource type="FontFile" uid="uid://bhdijtjhb3yfm" path="res://fonts/Simonetta/Simonetta-Regular.ttf" id="2_i8ibv"]
+[ext_resource type="Texture2D" uid="uid://kf7tlda1h3eq" path="res://assets/Button texture.png" id="3_dyf27"]
+[ext_resource type="Texture2D" uid="uid://phsxfq1t4cpl" path="res://assets/UI bg 3.png" id="4_i8ibv"]
+[ext_resource type="FontFile" uid="uid://b51slbom6i45b" path="res://fonts/Old_Standard_TT/OldStandardTT-Bold.ttf" id="5_dyf27"]
+[ext_resource type="Texture2D" uid="uid://51c22h1i2rpf" path="res://assets/Radio button/Off.png" id="6_yekxs"]
+[ext_resource type="Texture2D" uid="uid://dit5q0lfno4pu" path="res://assets/Radio button/On.png" id="7_mco0w"]
+[ext_resource type="FontFile" uid="uid://ch1cxh3gcfyy5" path="res://fonts/Niloofar/XB NiloofarBd.ttf" id="9_efkev"]
+[ext_resource type="FontFile" uid="uid://xyiu4jcfotqt" path="res://fonts/Niloofar/XB Niloofar.ttf" id="10_2wsa6"]
+[ext_resource type="FontFile" uid="uid://ok6grfaa22m7" path="res://fonts/Simonetta/Simonetta-Black.ttf" id="11_2ch7x"]
+[ext_resource type="Texture2D" uid="uid://bh16yd5krhqsx" path="res://assets/Button texture 2.png" id="12_mpvuv"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_efkev"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_2wsa6"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_1tr4d"]
+
+[node name="Case Reconstruction" type="Control" unique_id=1247472152]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mco0w")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1830321837]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xj8tr")
+
+[node name="BacktoWitness" type="Button" parent="." unique_id=468092433]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.017708333
+anchor_top = 0.9222222
+anchor_right = 0.23341028
+anchor_bottom = 1.0096142
+offset_right = 94.852264
+offset_bottom = 21.616577
+scale = Vector2(0.63233024, 0.63233024)
+theme_override_colors/font_color = Color(1, 0.7411765, 0.34901962, 1)
+theme_override_colors/font_hover_color = Color(0.79607844, 0.5372549, 0, 1)
+theme_override_fonts/font = ExtResource("2_i8ibv")
+theme_override_font_sizes/font_size = 38
+text = "BACK TO WITNESSES"
+icon = ExtResource("3_dyf27")
+flat = true
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=578327164]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.31041667
+anchor_top = 0.18333334
+anchor_right = 0.7416667
+anchor_bottom = 0.37777779
+offset_left = -137.0
+offset_right = -52.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_i8ibv")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1599098806]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.31041667
+anchor_top = 0.57222223
+anchor_right = 0.7416667
+anchor_bottom = 0.76666665
+offset_left = -137.0
+offset_right = -52.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_i8ibv")
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=316611063]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.31041667
+anchor_top = 0.37777779
+anchor_right = 0.7416667
+anchor_bottom = 0.57222223
+offset_left = -137.0
+offset_right = -52.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_i8ibv")
+
+[node name="Label" type="Label" parent="." unique_id=589021337]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 274.0
+offset_right = 595.0
+offset_bottom = 386.0
+scale = Vector2(0.65866935, 0.65866935)
+theme_override_colors/font_color = Color(1, 0.7921569, 0.21176471, 1)
+theme_override_fonts/font = ExtResource("5_dyf27")
+theme_override_font_sizes/font_size = 111
+text = "A."
+
+[node name="Label2" type="Label" parent="." unique_id=399865170]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 487.0
+offset_right = 595.0
+offset_bottom = 599.0
+scale = Vector2(0.65866935, 0.65866935)
+theme_override_colors/font_color = Color(1, 0.7921569, 0.21176471, 1)
+theme_override_fonts/font = ExtResource("5_dyf27")
+theme_override_font_sizes/font_size = 111
+text = "B."
+
+[node name="Label3" type="Label" parent="." unique_id=296947759]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 696.99994
+offset_right = 595.0
+offset_bottom = 808.99994
+scale = Vector2(0.65866935, 0.65866935)
+theme_override_colors/font_color = Color(1, 0.7921569, 0.21176471, 1)
+theme_override_fonts/font = ExtResource("5_dyf27")
+theme_override_font_sizes/font_size = 111
+text = "C."
+
+[node name="Button A" type="TextureButton" parent="." unique_id=370814025]
+layout_mode = 0
+offset_left = 1276.0
+offset_top = 274.0
+offset_right = 1576.0
+offset_bottom = 574.0
+scale = Vector2(0.22688258, 0.22688258)
+toggle_mode = true
+button_group = SubResource("ButtonGroup_efkev")
+texture_normal = ExtResource("6_yekxs")
+texture_pressed = ExtResource("7_mco0w")
+
+[node name="Button B" type="TextureButton" parent="." unique_id=539087160]
+layout_mode = 0
+offset_left = 1276.0
+offset_top = 487.0
+offset_right = 1576.0
+offset_bottom = 787.0
+scale = Vector2(0.22688258, 0.22688258)
+toggle_mode = true
+button_group = SubResource("ButtonGroup_2wsa6")
+texture_normal = ExtResource("6_yekxs")
+texture_pressed = ExtResource("7_mco0w")
+
+[node name="Button C" type="TextureButton" parent="." unique_id=980729144]
+layout_mode = 0
+offset_left = 1276.0
+offset_top = 697.0
+offset_right = 1576.0
+offset_bottom = 997.0
+scale = Vector2(0.22688258, 0.22688258)
+toggle_mode = true
+button_group = SubResource("ButtonGroup_1tr4d")
+texture_normal = ExtResource("6_yekxs")
+texture_pressed = ExtResource("7_mco0w")
+
+[node name="Choice labels" type="Control" parent="." unique_id=69356768]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="A" type="Label" parent="Choice labels" unique_id=218493207]
+layout_mode = 0
+offset_left = 571.0
+offset_top = 225.0
+offset_right = 1257.0
+offset_bottom = 274.0
+theme_override_fonts/font = ExtResource("9_efkev")
+theme_override_font_sizes/font_size = 32
+text = "He was a bandit who used revolution as cover."
+autowrap_mode = 3
+
+[node name="A sub" type="Label" parent="Choice labels" unique_id=1076528269]
+layout_mode = 0
+offset_left = 597.0
+offset_top = 274.0
+offset_right = 1257.0
+offset_bottom = 391.0
+theme_override_fonts/font = ExtResource("10_2wsa6")
+theme_override_font_sizes/font_size = 24
+text = "Papa Isio and his followers raided haciendas and caused destruction across Negros. His actions brought fear and suffering to many families."
+autowrap_mode = 3
+
+[node name="B" type="Label" parent="Choice labels" unique_id=1219400758]
+layout_mode = 0
+offset_left = 571.0
+offset_top = 456.0
+offset_right = 1301.0
+offset_bottom = 514.0
+theme_override_fonts/font = ExtResource("9_efkev")
+theme_override_font_sizes/font_size = 32
+text = "He was a freedom fighter who defended the poor."
+autowrap_mode = 3
+
+[node name="B sub" type="Label" parent="Choice labels" unique_id=171146089]
+layout_mode = 0
+offset_left = 597.0
+offset_top = 514.0
+offset_right = 1276.0
+offset_bottom = 585.0
+theme_override_fonts/font = ExtResource("10_2wsa6")
+theme_override_font_sizes/font_size = 22
+text = "Papa Isio stood up against those who exploited the farmers of Negros. He fought for the people who had no one else to speak for them."
+autowrap_mode = 3
+
+[node name="C" type="Label" parent="Choice labels" unique_id=242753906]
+layout_mode = 0
+offset_left = 571.0
+offset_top = 639.0
+offset_right = 1301.0
+offset_bottom = 740.0
+theme_override_fonts/font = ExtResource("9_efkev")
+theme_override_font_sizes/font_size = 32
+text = "The truth is more complex than either side claims."
+autowrap_mode = 3
+
+[node name="C sub" type="Label" parent="Choice labels" unique_id=459468816]
+layout_mode = 0
+offset_left = 571.0
+offset_top = 740.0
+offset_right = 1344.0
+offset_bottom = 811.0
+theme_override_fonts/font = ExtResource("10_2wsa6")
+theme_override_font_sizes/font_size = 22
+text = "Papa Isio was a blend of all three — a rebel and freedom fighter against colonialism, while being branded a bandit by the very authorities he resisted."
+autowrap_mode = 3
+
+[node name="SubmitAnswer" type="Button" parent="." unique_id=382632037]
+layout_mode = 0
+offset_left = 669.0
+offset_top = 851.0
+offset_right = 1063.0
+offset_bottom = 951.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_2ch7x")
+theme_override_font_sizes/font_size = 39
+text = "Submit Answer"
+icon = ExtResource("12_mpvuv")
+flat = true
+icon_alignment = 1
