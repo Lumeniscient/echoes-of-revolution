@@ -21,10 +21,17 @@ was he a bandit, a rebel, or a freedom
 fighter?
 
 ### Technology
-- Godot Engine 4.x (GDScript)
+- Godot Engine 4 (GDScript)
 - Google Gemini API (AI dialogue)
 - AI-generated art assets
-
+- 
+### Tools Used
+- Godot Engine 4 — godotengine.org
+- Google Gemini API — ai.google.dev
+- Leonardo.ai — leonardo.ai
+- Canva — canva.com
+- GitHub — github.com
+- 
 ### How to Play
 1. Download the latest release
 2. Run EchoesOfTheRevolution.exe
