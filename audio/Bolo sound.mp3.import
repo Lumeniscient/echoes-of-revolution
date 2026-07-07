@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bxyxqjgxjjr0c"
+path="res://.godot/imported/Bolo sound.mp3-f716f8f82299c329ff0615492815a75d.mp3str"
+
+[deps]
+
+source_file="res://audio/Bolo sound.mp3"
+dest_files=["res://.godot/imported/Bolo sound.mp3-f716f8f82299c329ff0615492815a75d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

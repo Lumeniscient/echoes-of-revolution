@@ -1,0 +1,103 @@
+[gd_scene format=3 uid="uid://r3o17duar27n"]
+
+[ext_resource type="Texture2D" uid="uid://c4pv7j53db5y3" path="res://assets/Main menu bg.png" id="1_8ln24"]
+[ext_resource type="Script" uid="uid://chksm4tndkidw" path="res://script/new_investigation.gd" id="1_ekxnf"]
+[ext_resource type="Script" uid="uid://cl7isgjlryqaw" path="res://script/exit.gd" id="1_l6cm7"]
+[ext_resource type="Script" uid="uid://c0cvh40wiljec" path="res://script/main_menu.gd" id="1_oa1go"]
+[ext_resource type="FontFile" uid="uid://bhdijtjhb3yfm" path="res://fonts/Simonetta/Simonetta-Regular.ttf" id="2_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://kf7tlda1h3eq" path="res://assets/Button texture.png" id="3_oa1go"]
+[ext_resource type="Script" uid="uid://bdnrsfr45r01r" path="res://script/the_archive.gd" id="6_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://bdgh505irko6k" path="res://assets/Title.png" id="6_rtw2f"]
+[ext_resource type="Script" uid="uid://bwy7ie8jhtii0" path="res://script/how_to_play.gd" id="7_lgwnu"]
+[ext_resource type="AudioStream" uid="uid://5upopwuuo25g" path="res://audio/Button click.mp3" id="8_tbmy8"]
+
+[node name="Main menu" type="Control" unique_id=892288663]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oa1go")
+
+[node name="Background" type="TextureRect" parent="." unique_id=637425696]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("1_8ln24")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=122763475]
+layout_mode = 0
+offset_left = 1349.0
+offset_top = 358.0
+offset_right = 1858.0
+offset_bottom = 612.0
+theme_override_constants/separation = 17
+
+[node name="New Investigation" type="Button" parent="VBoxContainer" unique_id=1646488886]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.7411765, 0.34901962, 1)
+theme_override_colors/font_hover_color = Color(0.79607844, 0.5372549, 0, 1)
+theme_override_fonts/font = ExtResource("2_rtw2f")
+theme_override_font_sizes/font_size = 50
+theme_override_icons/icon = ExtResource("3_oa1go")
+text = "New Investigation"
+icon = ExtResource("3_oa1go")
+flat = true
+icon_alignment = 1
+script = ExtResource("1_ekxnf")
+metadata/_edit_use_anchors_ = true
+
+[node name="The Archive" type="Button" parent="VBoxContainer" unique_id=769773066]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.7411765, 0.34901962, 1)
+theme_override_colors/font_hover_color = Color(0.79607844, 0.5372549, 0, 1)
+theme_override_fonts/font = ExtResource("2_rtw2f")
+theme_override_font_sizes/font_size = 50
+text = "The Archive"
+icon = ExtResource("3_oa1go")
+flat = true
+icon_alignment = 1
+script = ExtResource("6_5dd4i")
+metadata/_edit_use_anchors_ = true
+
+[node name="How to Play" type="Button" parent="VBoxContainer" unique_id=1286506765]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.7411765, 0.34901962, 1)
+theme_override_colors/font_hover_color = Color(0.79607844, 0.5372549, 0, 1)
+theme_override_fonts/font = ExtResource("2_rtw2f")
+theme_override_font_sizes/font_size = 50
+text = "How to Play"
+icon = ExtResource("3_oa1go")
+flat = true
+icon_alignment = 1
+script = ExtResource("7_lgwnu")
+metadata/_edit_use_anchors_ = true
+
+[node name="Exit" type="Button" parent="VBoxContainer" unique_id=863126840]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.7411765, 0.34901962, 1)
+theme_override_colors/font_hover_color = Color(0.79607844, 0.5372549, 0, 1)
+theme_override_fonts/font = ExtResource("2_rtw2f")
+theme_override_font_sizes/font_size = 50
+text = "Exit"
+icon = ExtResource("3_oa1go")
+flat = true
+icon_alignment = 1
+script = ExtResource("1_l6cm7")
+metadata/_edit_use_anchors_ = true
+
+[node name="Title" type="TextureRect" parent="." unique_id=918566865]
+layout_mode = 0
+offset_right = 714.0
+offset_bottom = 736.0
+texture = ExtResource("6_rtw2f")
+
+[node name="button click" type="AudioStreamPlayer" parent="." unique_id=364244044]
+stream = ExtResource("8_tbmy8")
+
+[connection signal="pressed" from="VBoxContainer/New Investigation" to="VBoxContainer/New Investigation" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/The Archive" to="VBoxContainer/The Archive" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/How to Play" to="VBoxContainer/How to Play" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="VBoxContainer/Exit" method="_on_pressed"]

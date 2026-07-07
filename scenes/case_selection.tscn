@@ -1,0 +1,327 @@
+[gd_scene format=3 uid="uid://3bflhu1pryc0"]
+
+[ext_resource type="Texture2D" uid="uid://b3kgcgqt7dl0n" path="res://assets/Case selection bg.jpg" id="1_d6rtt"]
+[ext_resource type="FontFile" uid="uid://b51slbom6i45b" path="res://fonts/Old_Standard_TT/OldStandardTT-Bold.ttf" id="2_x86vp"]
+[ext_resource type="FontFile" uid="uid://xyiu4jcfotqt" path="res://fonts/Niloofar/XB Niloofar.ttf" id="3_x86vp"]
+[ext_resource type="Texture2D" uid="uid://seppgs4m6cxj" path="res://assets/case 001/Case 001 Portrait.png" id="4_vhc1s"]
+[ext_resource type="Texture2D" uid="uid://df75nfaihlfwn" path="res://assets/Locked Character.png" id="5_kh07d"]
+[ext_resource type="FontFile" uid="uid://bhdijtjhb3yfm" path="res://fonts/Simonetta/Simonetta-Regular.ttf" id="5_vhc1s"]
+[ext_resource type="FontFile" uid="uid://ch1cxh3gcfyy5" path="res://fonts/Niloofar/XB NiloofarBd.ttf" id="6_kres1"]
+[ext_resource type="FontFile" uid="uid://ok6grfaa22m7" path="res://fonts/Simonetta/Simonetta-Black.ttf" id="7_i0bxu"]
+[ext_resource type="Texture2D" uid="uid://bh16yd5krhqsx" path="res://assets/Button texture 2.png" id="8_pk358"]
+[ext_resource type="Script" uid="uid://c2h1fduu0d871" path="res://script/investigate_btn_1.gd" id="10_kh07d"]
+[ext_resource type="Texture2D" uid="uid://kf7tlda1h3eq" path="res://assets/Button texture.png" id="10_yv8rs"]
+[ext_resource type="Texture2D" uid="uid://hm3tlw0coxcs" path="res://assets/Button texture 3.png" id="11_4klsx"]
+[ext_resource type="Script" uid="uid://cdmsn657146bq" path="res://script/back_to_menu.gd" id="11_yv8rs"]
+[ext_resource type="AudioStream" uid="uid://5upopwuuo25g" path="res://audio/Button click.mp3" id="14_yq6ik"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vhc1s"]
+
+[sub_resource type="GDScript" id="GDScript_yv8rs"]
+script/source = "extends Button
+
+func _on_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://scenes/investigation_scene_ 1.tscn\")
+"
+
+[node name="Case selection" type="Control" unique_id=145712813]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="." unique_id=775539530]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("1_d6rtt")
+metadata/_edit_use_anchors_ = true
+
+[node name="Screen title" type="Label" parent="." unique_id=49852790]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3671875
+anchor_top = 0.037962962
+anchor_right = 0.6328125
+anchor_bottom = 0.075925924
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.7921569, 0.21176471, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_x86vp")
+theme_override_font_sizes/font_size = 75
+text = "SELECT INVESTIGATION"
+metadata/_edit_use_anchors_ = true
+
+[node name="Screen subtitle" type="Label" parent="Screen title" unique_id=769101618]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.26987448
+anchor_top = 1.0
+anchor_right = 0.73012555
+anchor_bottom = 1.4473684
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_x86vp")
+theme_override_font_sizes/font_size = 30
+text = "Choose a historical case to investigate"
+metadata/_edit_use_anchors_ = true
+
+[node name="Portrait 001" type="TextureRect" parent="." unique_id=842287015]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -257.0
+offset_top = -378.5
+offset_right = 257.0
+offset_bottom = 378.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_vhc1s")
+
+[node name="Portrait 002" type="TextureRect" parent="." unique_id=1401466036]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -830.0
+offset_top = -342.0
+offset_right = -316.0
+offset_bottom = 415.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.9232093, 0.9232093)
+texture = ExtResource("5_kh07d")
+
+[node name="Portrait 003" type="TextureRect" parent="." unique_id=784822228]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 341.99988
+offset_top = -342.0
+offset_right = 855.9999
+offset_bottom = 415.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.9232093, 0.9232093)
+texture = ExtResource("5_kh07d")
+
+[node name="Card1" type="PanelContainer" parent="." unique_id=1837972121]
+layout_mode = 0
+offset_left = 756.0
+offset_top = 602.0
+offset_right = 1164.0
+offset_bottom = 800.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_vhc1s")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Card1" unique_id=1916500699]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Card1/VBoxContainer" unique_id=179791466]
+layout_mode = 2
+theme_override_constants/margin_top = -78
+
+[node name="CASE 001" type="Label" parent="Card1/VBoxContainer/MarginContainer" unique_id=1385407871]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.7921569, 0.21176471, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_vhc1s")
+theme_override_font_sizes/font_size = 37
+text = "CASE 001"
+horizontal_alignment = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="Card1/VBoxContainer" unique_id=101014106]
+layout_mode = 2
+theme_override_constants/margin_top = -30
+
+[node name="Case Title1" type="Label" parent="Card1/VBoxContainer/MarginContainer2" unique_id=724791023]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_x86vp")
+theme_override_font_sizes/font_size = 43
+text = "The Mystery of"
+horizontal_alignment = 1
+
+[node name="MarginContainer3" type="MarginContainer" parent="Card1/VBoxContainer" unique_id=1749306209]
+layout_mode = 2
+theme_override_constants/margin_top = -28
+
+[node name="Case Title2" type="Label" parent="Card1/VBoxContainer/MarginContainer3" unique_id=203358626]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_x86vp")
+theme_override_font_sizes/font_size = 58
+text = "PAPA ISIO"
+horizontal_alignment = 1
+
+[node name="MarginContainer4" type="MarginContainer" parent="Card1/VBoxContainer" unique_id=360129200]
+layout_mode = 2
+theme_override_constants/margin_top = -21
+
+[node name="Case Year1" type="Label" parent="Card1/VBoxContainer/MarginContainer4" unique_id=1426592878]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_kres1")
+theme_override_font_sizes/font_size = 20
+text = "Negros, 1896 - 1907"
+horizontal_alignment = 1
+
+[node name="MarginContainer5" type="MarginContainer" parent="Card1/VBoxContainer" unique_id=1055575023]
+layout_mode = 2
+
+[node name="Case Desc" type="Label" parent="Card1/VBoxContainer/MarginContainer5" unique_id=189809674]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_kres1")
+theme_override_font_sizes/font_size = 23
+text = "Was Papa Isio a bandit, a rebel, or a 
+freedom fighter?"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Card1" unique_id=366137576]
+layout_mode = 2
+theme_override_constants/margin_bottom = -285
+
+[node name="Investigate Btn 1" type="Button" parent="Card1/MarginContainer" unique_id=1142375691]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_i0bxu")
+theme_override_font_sizes/font_size = 39
+text = "INVESTIGATE"
+icon = ExtResource("8_pk358")
+flat = true
+icon_alignment = 1
+script = ExtResource("10_kh07d")
+
+[node name="Card2" type="PanelContainer" parent="." unique_id=115814566]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 618.0
+offset_right = 574.0
+offset_bottom = 816.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_vhc1s")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Card2" unique_id=1506041870]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Card2/VBoxContainer" unique_id=297516805]
+layout_mode = 2
+theme_override_constants/margin_top = -78
+
+[node name="CASE 002" type="Label" parent="Card2/VBoxContainer/MarginContainer" unique_id=1660133000]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.7921569, 0.21176471, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_vhc1s")
+theme_override_font_sizes/font_size = 37
+text = "CASE 002"
+horizontal_alignment = 1
+
+[node name="MarginContainer5" type="MarginContainer" parent="Card2/VBoxContainer" unique_id=1513356383]
+layout_mode = 2
+theme_override_constants/margin_top = 46
+
+[node name="Case Desc" type="Label" parent="Card2/VBoxContainer/MarginContainer5" unique_id=54250750]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_kres1")
+theme_override_font_sizes/font_size = 50
+text = "Coming soon"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Card2" unique_id=341682495]
+layout_mode = 2
+theme_override_constants/margin_bottom = -216
+
+[node name="Investigate Btn 1" type="Button" parent="Card2/MarginContainer" unique_id=275414130]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_i0bxu")
+theme_override_font_sizes/font_size = 39
+disabled = true
+text = "LOCKED"
+icon = ExtResource("11_4klsx")
+flat = true
+icon_alignment = 1
+script = SubResource("GDScript_yv8rs")
+
+[node name="Card3" type="PanelContainer" parent="." unique_id=1414839828]
+layout_mode = 0
+offset_left = 1338.0
+offset_top = 618.0
+offset_right = 1746.0
+offset_bottom = 816.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_vhc1s")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Card3" unique_id=899119528]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Card3/VBoxContainer" unique_id=102443522]
+layout_mode = 2
+theme_override_constants/margin_top = -78
+
+[node name="CASE 003" type="Label" parent="Card3/VBoxContainer/MarginContainer" unique_id=305466712]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.7921569, 0.21176471, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_vhc1s")
+theme_override_font_sizes/font_size = 37
+text = "CASE 003"
+horizontal_alignment = 1
+
+[node name="MarginContainer5" type="MarginContainer" parent="Card3/VBoxContainer" unique_id=887995045]
+layout_mode = 2
+theme_override_constants/margin_top = 46
+
+[node name="Case Desc" type="Label" parent="Card3/VBoxContainer/MarginContainer5" unique_id=1775986884]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_kres1")
+theme_override_font_sizes/font_size = 50
+text = "Coming soon"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Card3" unique_id=1772753162]
+layout_mode = 2
+theme_override_constants/margin_bottom = -216
+
+[node name="Investigate Btn 1" type="Button" parent="Card3/MarginContainer" unique_id=1931668400]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_i0bxu")
+theme_override_font_sizes/font_size = 39
+disabled = true
+text = "LOCKED"
+icon = ExtResource("11_4klsx")
+flat = true
+icon_alignment = 1
+script = SubResource("GDScript_yv8rs")
+
+[node name="Back to Menu" type="Button" parent="." unique_id=1902038705]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.025
+anchor_top = 0.88703704
+anchor_right = 0.29010418
+anchor_bottom = 0.99444443
+scale = Vector2(0.8136498, 0.8136498)
+theme_override_colors/font_color = Color(1, 0.7411765, 0.34901962, 1)
+theme_override_colors/font_hover_color = Color(0.79607844, 0.5372549, 0, 1)
+theme_override_fonts/font = ExtResource("5_vhc1s")
+theme_override_font_sizes/font_size = 38
+text = "BACK TO MAIN MENU"
+icon = ExtResource("10_yv8rs")
+flat = true
+icon_alignment = 1
+script = ExtResource("11_yv8rs")
+metadata/_edit_use_anchors_ = true
+
+[node name="button click" type="AudioStreamPlayer" parent="." unique_id=1035765326]
+stream = ExtResource("14_yq6ik")
+
+[connection signal="pressed" from="Card2/MarginContainer/Investigate Btn 1" to="Card2/MarginContainer/Investigate Btn 1" method="_on_pressed"]
+[connection signal="pressed" from="Card3/MarginContainer/Investigate Btn 1" to="Card3/MarginContainer/Investigate Btn 1" method="_on_pressed"]

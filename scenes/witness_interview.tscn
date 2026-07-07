@@ -1,0 +1,354 @@
+[gd_scene format=3 uid="uid://ikom3il83e1i"]
+
+[ext_resource type="Script" uid="uid://dfmlbfggjiqdl" path="res://script/witness_interview.gd" id="1_0nlv4"]
+[ext_resource type="Texture2D" uid="uid://d15qx32x3fo6n" path="res://assets/Witness Interview bg.png" id="1_6i7wd"]
+[ext_resource type="FontFile" uid="uid://bhdijtjhb3yfm" path="res://fonts/Simonetta/Simonetta-Regular.ttf" id="2_e5thj"]
+[ext_resource type="Texture2D" uid="uid://kf7tlda1h3eq" path="res://assets/Button texture.png" id="3_7dxuf"]
+[ext_resource type="Texture2D" uid="uid://bw3vudinqxlie" path="res://assets/case 001/Don Aurelio.png" id="4_oiv5a"]
+[ext_resource type="Script" uid="uid://c2v23o4nerwmq" path="res://script/evidence.gd" id="5_3tywg"]
+[ext_resource type="Texture2D" uid="uid://debnn5wgv1n7b" path="res://assets/case 001/Don Aurelio Icon.png" id="5_ccn6e"]
+[ext_resource type="Texture2D" uid="uid://dgg0mtd5g4cyv" path="res://assets/case 001/Carding Icon.png" id="5_oiv5a"]
+[ext_resource type="Texture2D" uid="uid://d3fvmi6bk4scs" path="res://assets/Interview UI/UI 1.png" id="7_h83ys"]
+[ext_resource type="Texture2D" uid="uid://dtht1tkngxa2q" path="res://assets/Interview UI/UI 5.png" id="8_5lsbi"]
+[ext_resource type="Texture2D" uid="uid://bgaa5j2teovxs" path="res://assets/Interview UI/UI 4.png" id="9_m3uyt"]
+[ext_resource type="Texture2D" uid="uid://bqfyfexefsp5y" path="res://assets/Interview UI/UI 3.png" id="10_qkksr"]
+[ext_resource type="Texture2D" uid="uid://ctwns257j2co1" path="res://assets/Interview UI/Chat icon.png" id="10_ro8e6"]
+[ext_resource type="FontFile" uid="uid://b51slbom6i45b" path="res://fonts/Old_Standard_TT/OldStandardTT-Bold.ttf" id="11_m3uyt"]
+[ext_resource type="Texture2D" uid="uid://c0ub8oga2t1mq" path="res://assets/Interview UI/UI 2.png" id="13_e6wx4"]
+[ext_resource type="Texture2D" uid="uid://h00tjuui4sd" path="res://assets/Interview UI/UI 6.png" id="13_ro8e6"]
+[ext_resource type="FontFile" uid="uid://ok6grfaa22m7" path="res://fonts/Simonetta/Simonetta-Black.ttf" id="15_n1x12"]
+[ext_resource type="Texture2D" uid="uid://d080ukwr2ofvh" path="res://assets/case 001/Evidences.png" id="18_5445e"]
+[ext_resource type="Texture2D" uid="uid://bh16yd5krhqsx" path="res://assets/Button texture 2.png" id="19_4n66b"]
+[ext_resource type="Script" uid="uid://5acue2d71b1e" path="res://script/evidence_close.gd" id="20_5445e"]
+[ext_resource type="Texture2D" uid="uid://2ydeydnwq25d" path="res://assets/case 001/Memory conflict Popup.png" id="21_4n66b"]
+[ext_resource type="Script" uid="uid://ceb5txhl5hqqe" path="res://script/memory_conflict_close.gd" id="22_scegs"]
+[ext_resource type="AudioStream" uid="uid://5upopwuuo25g" path="res://audio/Button click.mp3" id="23_lg4ti"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qkksr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ro8e6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e6wx4"]
+
+[node name="Witness Interview" type="Control" unique_id=1364088188]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0nlv4")
+
+[node name="bg" type="TextureRect" parent="." unique_id=547270415]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_6i7wd")
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=33455108]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 936.0
+offset_right = 2147.0
+offset_bottom = 1052.0
+scale = Vector2(0.85853076, 0.85853076)
+theme_override_constants/separation = 278
+
+[node name="Back" type="Button" parent="HBoxContainer" unique_id=900930030]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.7411765, 0.34901962, 1)
+theme_override_colors/font_hover_color = Color(0.79607844, 0.5372549, 0, 1)
+theme_override_fonts/font = ExtResource("2_e5thj")
+theme_override_font_sizes/font_size = 40
+text = "BACK"
+icon = ExtResource("3_7dxuf")
+flat = true
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Evidence" type="Button" parent="HBoxContainer" unique_id=709783491]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.7411765, 0.34901962, 1)
+theme_override_colors/font_hover_color = Color(0.79607844, 0.5372549, 0, 1)
+theme_override_fonts/font = ExtResource("2_e5thj")
+theme_override_font_sizes/font_size = 40
+text = "Evidence"
+icon = ExtResource("3_7dxuf")
+flat = true
+icon_alignment = 1
+script = ExtResource("5_3tywg")
+metadata/_edit_use_anchors_ = true
+
+[node name="Case reconstruction" type="Button" parent="HBoxContainer" unique_id=581071502]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.7411765, 0.34901962, 1)
+theme_override_colors/font_hover_color = Color(0.79607844, 0.5372549, 0, 1)
+theme_override_fonts/font = ExtResource("2_e5thj")
+theme_override_font_sizes/font_size = 40
+text = "CASE RECONSTRUCTION"
+icon = ExtResource("3_7dxuf")
+flat = true
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Portrait" type="TextureRect" parent="." unique_id=148049648]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.029166667
+anchor_top = 0.024074074
+anchor_right = 0.271875
+anchor_bottom = 0.6324074
+texture = ExtResource("4_oiv5a")
+metadata/_edit_use_anchors_ = true
+
+[node name="Don Aurelio Icon" type="TextureButton" parent="." unique_id=1069914370]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 690.0
+offset_right = 271.0
+offset_bottom = 901.0
+texture_normal = ExtResource("5_ccn6e")
+
+[node name="Carding Icon" type="TextureButton" parent="." unique_id=572532047]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 690.0
+offset_right = 497.0
+offset_bottom = 901.0
+texture_normal = ExtResource("5_oiv5a")
+
+[node name="UI" type="Control" parent="." unique_id=77379839]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="UI" unique_id=1224357812]
+layout_mode = 0
+offset_left = 628.0
+offset_top = 103.0
+offset_right = 1848.0
+offset_bottom = 284.0
+texture = ExtResource("7_h83ys")
+
+[node name="TextureRect2" type="TextureRect" parent="UI" unique_id=541740430]
+layout_mode = 0
+offset_left = 644.0
+offset_top = 48.0
+offset_right = 1086.0
+offset_bottom = 136.0
+texture = ExtResource("8_5lsbi")
+
+[node name="TextureRect3" type="TextureRect" parent="UI" unique_id=1590741596]
+layout_mode = 0
+offset_left = 634.0
+offset_top = 333.0
+offset_right = 1815.0
+offset_bottom = 435.0
+texture = ExtResource("9_m3uyt")
+
+[node name="TextureRect4" type="TextureRect" parent="UI" unique_id=544065876]
+layout_mode = 0
+offset_left = 634.0
+offset_top = 400.0
+offset_right = 1815.0
+offset_bottom = 502.0
+texture = ExtResource("9_m3uyt")
+
+[node name="TextureRect5" type="TextureRect" parent="UI" unique_id=1250930084]
+layout_mode = 0
+offset_left = 628.0
+offset_top = 480.0
+offset_right = 1820.0
+offset_bottom = 621.0
+texture = ExtResource("10_qkksr")
+
+[node name="TextureRect6" type="TextureRect" parent="UI" unique_id=1743345700]
+layout_mode = 0
+offset_left = 660.0
+offset_top = 367.0
+offset_right = 1689.0
+offset_bottom = 1293.0
+scale = Vector2(0.040924728, 0.040924728)
+texture = ExtResource("10_ro8e6")
+
+[node name="TextureRect7" type="TextureRect" parent="UI" unique_id=1357291579]
+layout_mode = 0
+offset_left = 660.0
+offset_top = 435.0
+offset_right = 1689.0
+offset_bottom = 1361.0
+scale = Vector2(0.040924728, 0.040924728)
+texture = ExtResource("10_ro8e6")
+
+[node name="Label" type="Label" parent="UI" unique_id=1139180193]
+layout_mode = 0
+offset_left = 644.0
+offset_top = 301.0
+offset_right = 1020.0
+offset_bottom = 343.0
+theme_override_fonts/font = ExtResource("11_m3uyt")
+theme_override_font_sizes/font_size = 41
+text = "ASK A QEUSTION:"
+
+[node name="LineEdit" type="LineEdit" parent="UI" unique_id=1767201547]
+layout_mode = 0
+offset_left = 674.0
+offset_top = 502.0
+offset_right = 1776.0
+offset_bottom = 601.0
+theme_override_fonts/font = ExtResource("2_e5thj")
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qkksr")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_ro8e6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_e6wx4")
+placeholder_text = "Or type your own question....."
+
+[node name="Q1" type="Button" parent="UI" unique_id=3401286]
+layout_mode = 0
+offset_left = 720.0
+offset_top = 367.0
+offset_right = 1160.0
+offset_bottom = 413.0
+theme_override_colors/font_pressed_color = Color(0.79607844, 0.5372549, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0.7411765, 0.34901962, 1)
+theme_override_fonts/font = ExtResource("2_e5thj")
+theme_override_font_sizes/font_size = 30
+text = "What do you know about Papa Isio?"
+flat = true
+
+[node name="Q2" type="Button" parent="UI" unique_id=1181060404]
+layout_mode = 0
+offset_left = 720.0
+offset_top = 435.0
+offset_right = 1160.0
+offset_bottom = 481.0
+theme_override_colors/font_pressed_color = Color(0.79607844, 0.5372549, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0.7411765, 0.34901962, 1)
+theme_override_fonts/font = ExtResource("2_e5thj")
+theme_override_font_sizes/font_size = 30
+text = "Who do you think Papa Isio really was?"
+flat = true
+
+[node name="TextureRect9" type="TextureRect" parent="UI" unique_id=524789898]
+layout_mode = 0
+offset_left = 628.0
+offset_top = 662.0
+offset_right = 1851.0
+offset_bottom = 854.0
+texture = ExtResource("13_e6wx4")
+
+[node name="TextureRect8" type="TextureRect" parent="UI" unique_id=1775554507]
+layout_mode = 0
+offset_left = 644.0
+offset_top = 621.0
+offset_right = 1133.0
+offset_bottom = 706.0
+texture = ExtResource("13_ro8e6")
+
+[node name="Label2" type="Label" parent="UI" unique_id=478620021]
+layout_mode = 0
+offset_left = 685.0
+offset_top = 645.0
+offset_right = 863.0
+offset_bottom = 668.0
+theme_override_colors/font_color = Color(0.99999994, 0.7276733, 0.30727443, 1)
+theme_override_fonts/font = ExtResource("15_n1x12")
+theme_override_font_sizes/font_size = 28
+text = "AI GENERATED RESPONSE"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UI" unique_id=508103683]
+layout_mode = 0
+offset_left = 660.0
+offset_top = 706.0
+offset_right = 1820.0
+offset_bottom = 832.0
+theme_override_fonts/normal_font = ExtResource("2_e5thj")
+theme_override_font_sizes/normal_font_size = 24
+text = "Select a question above to hear the witness respond..."
+
+[node name="Witness Intro" type="Label" parent="UI" unique_id=1421697576]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.125
+anchor_top = 3.4
+anchor_right = 46.2
+anchor_bottom = 6.625
+theme_override_fonts/font = ExtResource("2_e5thj")
+theme_override_font_sizes/font_size = 32
+text = "I am Don Aurelio Santos. My family has owned haciendas in Negros for three generations. I know exactly what happened here and I know exactly what Papa Isio really was. Ask your questions. But do not expect me to sugarcoat the truth."
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Witness name" type="Label" parent="UI" unique_id=104597276]
+layout_mode = 0
+offset_left = 674.0
+offset_top = 64.0
+offset_right = 1056.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_n1x12")
+theme_override_font_sizes/font_size = 44
+text = "Don Aurelio Santos"
+
+[node name="Evidence Popup" type="TextureRect" parent="." unique_id=275400762]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("18_5445e")
+
+[node name="Evidence close" type="Button" parent="Evidence Popup" unique_id=1655983215]
+layout_mode = 0
+offset_left = 1415.0
+offset_top = 64.0
+offset_right = 1809.0
+offset_bottom = 164.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("15_n1x12")
+theme_override_font_sizes/font_size = 39
+text = "Close"
+icon = ExtResource("19_4n66b")
+flat = true
+icon_alignment = 1
+script = ExtResource("20_5445e")
+
+[node name="Label" type="Label" parent="Evidence Popup" unique_id=1397256440]
+layout_mode = 0
+offset_left = 740.0
+offset_top = 949.0
+offset_right = 1420.0
+offset_bottom = 987.0
+theme_override_fonts/font = ExtResource("15_n1x12")
+theme_override_font_sizes/font_size = 30
+text = "Ask the witnesses about the evidence you collected!"
+
+[node name="MemoryConflictPopup" type="TextureRect" parent="." unique_id=910008349]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("21_4n66b")
+
+[node name="MemoryConflictClose" type="Button" parent="MemoryConflictPopup" unique_id=993392792]
+layout_mode = 0
+offset_left = 856.0
+offset_top = 734.0
+offset_right = 1072.0
+offset_bottom = 793.0
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.15686275, 1)
+theme_override_colors/font_hover_color = Color(0.7359674, 0.7354649, 0.09000639, 1)
+theme_override_fonts/font = ExtResource("15_n1x12")
+theme_override_font_sizes/font_size = 40
+text = "Understood"
+flat = true
+script = ExtResource("22_scegs")
+
+[node name="button click" type="AudioStreamPlayer" parent="." unique_id=382125720]
+stream = ExtResource("23_lg4ti")
+
+[connection signal="pressed" from="HBoxContainer/Evidence" to="HBoxContainer/Evidence" method="_on_pressed"]
+[connection signal="pressed" from="Evidence Popup/Evidence close" to="Evidence Popup/Evidence close" method="_on_pressed"]
+[connection signal="pressed" from="MemoryConflictPopup/MemoryConflictClose" to="MemoryConflictPopup/MemoryConflictClose" method="_on_pressed"]

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b2l3xc0ilord8"
+path="res://.godot/imported/Letter sound.wav-f26ca3b7816592efca2eaabc0a1ed546.sample"
+
+[deps]
+
+source_file="res://audio/Letter sound.wav"
+dest_files=["res://.godot/imported/Letter sound.wav-f26ca3b7816592efca2eaabc0a1ed546.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
