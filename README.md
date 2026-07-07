@@ -29,6 +29,7 @@ fighter?
 - Godot Engine 4 — godotengine.org
 - Google Gemini API — ai.google.dev
 - Leonardo.ai — leonardo.ai
+- freesound — freesound.org
 - Canva — canva.com
 - GitHub — github.com
   
